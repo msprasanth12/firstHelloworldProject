@@ -14,7 +14,8 @@ pipeline
 		{
 			steps
 			{
-				bat label: 'abc', script: 'mvn clean install'
+				bat label: 'abc', script: 'mvn clean'
+				bat label: 'abc', script: 'mvn install'
 			}
 		}
 		stage('tomcat')

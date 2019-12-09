@@ -5,7 +5,7 @@ pipeline
 	{
 		stage('git')
 		{
-			step
+			steps
 			{
 				git branch: 'test', credentialsId: 'tomcat-credential', url: 'https://github.com/msprasanth12/firstHelloworldProject.git'
 			}

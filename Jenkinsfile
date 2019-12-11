@@ -7,15 +7,15 @@ pipeline
 		{
 			steps
 			{
-				git branch: 'test', credentialsId: 'tomcat-credential', url: 'https://github.com/msprasanth12/firstHelloworldProject.git'
+				git branch: 'master', url: 'https://github.com/msprasanth12/firstHelloworldProject.git'
 			}
 		}
 		stage('maven')
 		{
 			steps
 			{
-				bat label: 'abc', script: 'mvn clean'
-                bat label: 'cba', script: 'mvn install'
+				bat label: '', script: 'mvn clean'
+                bat label: '', script: 'mvn install'
 			}
 		}
 		stage('tomcat')

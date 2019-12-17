@@ -22,7 +22,7 @@ pipeline
 		{
 			steps
 			{
-				deploy adapters: [tomcat8(credentialsId: 'tomcat-credential', path: '', url: 'http://localhost:8888/')], contextPath: 'hippo-app-10', war: '**/*.war'
+				deploy adapters: [tomcat8(credentialsId: 'tomcat-credential', path: '', url: 'http://localhost:8888/')], contextPath: 'hippo-app-010', war: '**/*.war'
 			}
 		}
 	}
